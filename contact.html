@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
    
 <style>
+    body{
+        background-color: #fffffb;
+        overflow-x: hidden;
+    }
 .head{
     font-family:"Matemasie", sans-serif;
     display: inline;
     position:absolute;
-    top:20px;
+    top:30px;
     left: 40px;
     font-size: 30px;
 }
 .navbar{
     
-    background-color: #f4fafb;
+    background-color: #feffff;
     padding: 5px;
 }
 .navbar-menu{
@@ -37,30 +41,22 @@ form{
     left:1070px;
     top:30px;
 }
-input{
+.input-1{
 
     height:30px;
-    width:200px;
+    width:150px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: 0px;
 }
-button{
+.button-1{
     position:absolute;
     border-left: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     height:35.5px;
 }
-.head-img{
-    box-sizing: border-box;
-    width:900px;
-    height:500px;
-}
-.head-1img{
-    width:595px;
-    height:500px;
-}
+
 .contact{
     display: flex;
     justify-content: center;
@@ -78,7 +74,7 @@ button{
 }
 .contact-2{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 .icon{
     border:1px solid black;
@@ -92,9 +88,92 @@ button{
 }
 
 .a-1{
-    font-size: 20px;
-    color:black;
+    color: black;
+    position: relative;
+    left: 20px;
 }
+
+.head-img{
+    
+     box-sizing: border-box;
+    width:100%;
+    height:500px;
+    
+}
+
+img{
+   position: relative;
+   left: 20px;
+   width:650px;
+   height:100%;
+   padding: 2px;
+}
+.form-1{
+    position:absolute;
+    left:25px;
+    top:900px; 
+}
+.input-r{
+    display: block;
+    width:400px;
+    height:30px;
+    margin-top: 14px;
+     
+}
+textarea{
+    width: 401px;
+    margin-top: 14px;
+}
+.reach-h1{
+    position: relative;
+    left:22px;
+}
+.react-out{
+    margin-top:40px;
+    
+    box-sizing: border-box;
+    width:500px;
+    height:500px;
+}
+.button-r{
+    width:100px;
+    height:25px;
+    display: block;
+    margin-top: 14px;
+    margin-left:150px;
+}
+.iframe{
+    margin-top:250px;
+    margin-left: 700px;
+    width:700px;
+    height: 600px;
+}
+ifrmae{
+    width: max-width;
+    height: 100%;
+}
+.instra-img{
+            display: flex;
+            position: relative;
+            left:10px;
+            width:395px;
+            height:500px;
+        }
+        .insta-img{
+            position: relative;
+        
+            width: max-width;
+            height: 100%;
+            padding:3px;
+        }
+        .insta-p1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+       .insta-p2{
+        font-weight: 500px;
+        letter-spacing: 2px;
+       }
 </style>
 
 </head>
@@ -112,12 +191,14 @@ button{
         </ul>
     </nav>
     <form >
-        <input type="text" placeholder="search"></input>
-        <button type="button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="search" class="input-1"></input>
+        <button type="button" class="button-1"><i class="fa fa-search"></i></button>
     </form>
-    
-  <img src="scroll-4.jpg" class="head-img">   
-  <img src="scroll-3.jpg" class="head-1img">
+    <div class="head-img">
+     <img src="cont.jpg">
+     <img src="scroll-1.jpg"
+    </div>
+<!--FOR CONTACT DETAILS-->
 <div class="contact">
     <p class="p-region">OUR REGIONAL OFFICE</p>
     <p class="p-contact">Contact Us</p>
@@ -126,26 +207,54 @@ button{
 <div class="contact-2">
     <div class="c-1">
         <a href="" class="a-1">
-        <i class="fa fa-circle-question icon"></i>
-        </a>
-
-    </div>
-    <div class="c-1">
-        <a href="" class="a-1">
-        <i class="fa fa-location-dot icon"></i></a>
-    </div>
-    <div class="c-1">
-        <a href="" class="a-1">
-        <i class="fa fa-phone-volume icon"></i>
-        </a>
-    </div>
-    <div class="c-1">
-        <a href="" class="a-1">
-        <i class="fa fa-envelope icon"></i>
+        <i class="fa fa-circle-question icon"></i>Having queries
         </a>
     </div>
 
+    <div class="c-1">
+        <a href="" class="a-1">
+        <i class="fa fa-location-dot icon"></i>Location</a>
     </div>
+
+    <div class="c-1">
+        <a href="" class="a-1">
+        <i class="fa fa-phone-volume icon"></i>Call Us Today
+        </a>
+    </div>
+    
+    <div class="c-1">
+        <a href="" class="a-1">
+        <i class="fa fa-envelope icon"></i>Send To Inbox
+        </a>
+    </div>
+</div>
+    <!--THIS IS END FOR CONTACT DETAILS-->
+    <!--THIS FOR REACH AND LOCATINON-->
+    <div class="react-out">
+    <h1 class="reach-h1">Reach To Us</h1>
+<form class="form-1">
+    <input type="text" placeholder="your name*" class="input-r">
+    <input type="text" placeholder="your phone-number*" class="input-r">
+    <input type="text" placeholder="your email*" class="input-r">
+    <textarea rows="5" cols="30"></textarea>
+    <button type="button" class="button-r">submit</button>
+</form>
+</div></div>
+<div class="iframe">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60882.76940748094!2d78.29353726405887!3d17.49924900018395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93664f99eef3%3A0x9d35f8aa061ffcc8!2sStyle%20Union%20-%20GSM%20Mall!5e0!3m2!1sen!2sin!4v1725875439694!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--this for instragram-->
+<div class="instagram">
+    <center>
+<p class="insta-p1">Explore Us Instragram</p>
+<p class="insta-p2">Tag <b>@unsen</b> in your Instagram photos for a chance to be featured here.</p>
+</center> 
+</div>
+ <div class="instra-img">
+    <img src="insta-5.jpg" alt="" class="insta-img">
+    <img src="insta-2.jpg" alt="" class="insta-img">
+    <img src="insta-6.jpg" alt="" class="insta-img">
+    <img src="instra-1.jpg" alt="" class="insta-img">
 </div>
 </body>
 </html>
